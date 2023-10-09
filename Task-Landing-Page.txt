@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///C:/Users/ANUSHA%20KASTHURI/OneDrive/Desktop/Intern/Task1-LandingPageNew.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.iecaonline.com/wp-content/uploads/2020/06/Career-center-image-low-res-800x480.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: HotPink;
+        }
+
+              .container {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100vh;
+		
+        }
+
+        .login-form {
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            background-color: MediumSeaGreen;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+		
+	}
+	.login-form h2{
+		color:DarkMagenta;
+}
+
+        .login-form button:hover {
+            background-color: #666;
+		
+        }
+
+
+        .content {
+            padding: 20px;
+            text-align: center;
+	color:#dd3344;
+        }
+	.content p
+	{
+	color:#777755;
+	}
+
+	
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Landing Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/ANUSHA%20KASTHURI/OneDrive/Desktop/Intern/landingPage1.html?#">Home</a></li>
+            <li><a href="file:///C:/Users/ANUSHA%20KASTHURI/OneDrive/Desktop/Intern/landingPage1.html?#">About</a></li>
+            <li><a href="file:///C:/Users/ANUSHA%20KASTHURI/OneDrive/Desktop/Intern/landingPage1.html?#">Services</a></li>
+            <li><a href="file:///C:/Users/ANUSHA%20KASTHURI/OneDrive/Desktop/Intern/landingPage1.html?#">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Simple Landing Page</h2>
+
+        <p>This is a simple landing page created using HTML and CSS.</p>
+    </div>
+<div class="container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <center><input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+		
+		<button>Login</button></center>
+        </form>
+</div>
+	<div class="options">
+            <a href="file:///C:/Users/ANUSHA%20KASTHURI/OneDrive/Desktop/Intern/forgot_password.html">Forgot password</a>
+            <span>&nbsp;&nbsp;</span> <!-- Adding space between Register and New user -->
+            <a href="file:///C:/Users/ANUSHA%20KASTHURI/OneDrive/Desktop/Intern/register.html">New user? Register here</a>
+        
+    </div>
+
+
+    <footer>
+        <p>© 2022 Landing Page. All rights reserved.</p>
+    </footer>
+
+
+  </body></html>
