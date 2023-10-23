@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Books</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d98fdb142e.js" crossorigin="anonymous"></script>
+   <!--  <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(MyImage.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color:hotpink;
+        }
+
+
+.container-right{
+    width: 100%;
+    height: 100vh;
+    
+    background-position: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+
+
+/* Container for centering the slideshow */
+.center-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%; /* Center vertically on the page */
+            width:50%;
+            float: 50;
+            
+        }
+
+        /* Slideshow container styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 500px; /* Adjust the maximum width to your preference */
+            width: 80%;  /* Ensure the images take the full width of the container */
+            height: 80%;   /* Maintain aspect ratio */
+            bottom: 50%;
+            left: 5%;
+        }
+
+
+
+        /* Image styles */
+        .mySlides {
+            display: none;
+            width: 500px; /* Ensure the images take the full width of the container */
+            height: 400px; /* Maintain aspect ratio */
+            
+        }
+
+        /* Button styles */
+        button {
+            
+            cursor: pointer;
+            
+        }
+
+        /* Position the Prev button below the middle of the image */
+        #prevBtn {
+            position: absolute;
+            left: 5%;
+            transform: translateX(-50%);
+            bottom: 25%;
+            margin-bottom: -25px; /* Half of the button height */
+        }
+
+        /* Position the Next button below the middle of the image */
+        #nextBtn {
+            position: absolute;
+            left:39%;
+            transform: translateX(-50%);
+            bottom: 25%;
+            margin-bottom: -25px; /* Half of the button height */
+        }
+   
+
+
+
+       
+	.form-box{
+    width: 70%;
+    max-width: 450px;
+    position: absolute;
+    bottom: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    
+
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-feild{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-feild{
+    margin-left:15px;
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+font p a{
+   text-decoration: none;
+   color:#3c00a0; 
+}
+
+.btn-feild{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-feild button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 280px;
+}
+.input-feild.error {
+  border: 1px solid red;
+}
+
+.btn-feild button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+
+
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            color:#dd3344;
+        }
+		.content p
+		{
+		color:#777755;
+		}
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+
+<body>
+    <header>
+        <h1>Welcome to the free book store</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>All Languages Are Avaliable here</h2>
+        <p>Choose your favourite book and Enjoy!</p>
+    </div>
+<br><br><br>
+<div class="row">
+    <div class="slideshow-container">
+        <img class="mySlides" src="book3.jpeg">
+         <img class="mySlides" src="book4.jpeg">
+        <img class="mySlides" src="book5.jpeg">
+    </div>
+    <br>
+
+   <div class="move">
+    <i class="fa-solid fa-angles-right"></i>  
+    <i class="fa-solid fa-angles-left"></i> 
+    <button id="prevBtn" onclick="plusSlides(-1)"><</button>
+    <button id="nextBtn" onclick="plusSlides(1)">></button>
+   </div>
+
+<div class="container-right">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                
+                <!-- Input Fields -->
+                <div class="input-group">
+                    <div class="input-feild" id="nameFeild">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="name">
+                    </div>
+
+                    <div class="input-feild">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="email">
+                    </div>
+
+                    <div class="input-feild">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <p>Forget Password <a href="#">Click Here!</a></p>
+                </div>
+
+                <!-- SignUp & SignIn buttons -->
+                <div class="btn-feild">
+                    <button type="button" id="signUpBtn">Sign up</button>
+                    <button type="button" class="disable" id="signInBtn">Sign in</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+<script>
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector('#name').value;
+  const email = document.querySelector('#email').value;
+  const password = document.querySelector('#password').value;
+
+  let isValid = true;
+
+  if (name === '') {
+    isValid = false;
+    document.querySelector('#nameFeild').classList.add('error');
+  } else {
+    document.querySelector('#nameFeild').classList.remove('error');
+  }
+
+  if (email === '') {
+    isValid = false;
+    document.querySelector('#emailFeild').classList.add('error');
+  } else if (!validateEmail(email)) {
+    isValid = false;
+    document.querySelector('#emailFeild').classList.add('error');
+  } else {
+    document.querySelector('#emailFeild').classList.remove('error');
+  }
+
+  if (password === '') {
+    isValid = false;
+    document.querySelector('#passwordFeild').classList.add('error');
+  } else if (password.length < 8) {
+    isValid = false;
+    document.querySelector('#passwordFeild').classList.add('error');
+  } else {
+    document.querySelector('#passwordFeild').classList.remove('error');
+  }
+
+  if (isValid) {
+    // Form is valid, submit it.
+    form.submit();
+  }
+});
+
+function validateEmail(email) {
+  const re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+
+</script>
+<script>
+        let slideIndex = 1;
+
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+<script >
+
+    /* Variable declarations for buttons , feilds, title */
+let signUpBtn = document.getElementById("signUpBtn");
+let signInBtn = document.getElementById("signInBtn");
+let name = document.getElementById("nameFeild");
+let title = document.getElementById("title");
+
+/* TOGGLE functionality for sign in & sign up buttons */
+signInBtn.onclick = function(){
+    nameFeild.style.maxHeight = "0";
+    title.innerHTML="Sign In";
+    signUpBtn.classList.add("disable");
+    signInBtn.classList.remove("disable");
+}
+
+signUpBtn.onclick = function(){
+    nameFeild.style.maxHeight = "60px";
+    title.innerHTML="Sign Up";
+    signUpBtn.classList.remove("disable");
+    signInBtn.classList.add("disable");
+}
+ </script>
+
+ <footer>
+        <p>© 2022 Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>  
